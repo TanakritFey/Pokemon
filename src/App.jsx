@@ -117,7 +117,7 @@ function App() {
       }
       </div>
 
-      <div >
+      <div className='pr-3' >
         <h2 className='text-xl text-white my-2'>Your Favourite Pokemon</h2>
         {/* ถ้า fav.length มากกว่า 0 หรือ มี Pokemon ที่ add มาแล้ว จะให้แสดง ภาพ Pokemon และ ส่งค่า props -> useState Fav ไปที่ FavPoke.jsx */}
         {fav.length > 0 ? <FavPoke fav={fav}/> : <div className='flex h-full justify-center items-center'> <h3 className='text-white'>No Favourite Pokemon</h3> </div> }

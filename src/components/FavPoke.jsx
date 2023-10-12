@@ -9,8 +9,8 @@ function FavPoke({fav} ) {
         <div className='grid grid-cols-5 mt-3'>
         {/* รับค่า Props จาก useState Faa ที่อยู่ใน App.jsx  และมา map เอาข้อมูลที่มีการกดปุ่ม addFav มาแสดง*/}
         {fav?.map((data,index)=>(
-            <div key ={index} className='items-center flex flex-col justify-center mx-auto'>
-                <h3 className='text-white text-xl'>{data.name}</h3>
+            <div key ={index} className='items-center flex flex-col justify-center '>
+                <h3 className='text-white text-sm'>{data.name}</h3>
                 <img src={data?.sprites?.other?.home.front_default} alt="data.name" />
                 <LikePoke />
             </div>
